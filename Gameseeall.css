@@ -1,0 +1,113 @@
+.game-seeall-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 50ox;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+   margin:20px;
+  }
+  .game-main{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+  }
+
+  .game-seeall-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    height: 400px;
+    width: 550px;
+  }
+
+  .game-seeall-card img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px;
+  }
+
+  .game-seeall-card .content {
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, opacity 0.3s;
+    height: 50px;
+  }
+
+  .game-seeall-card:hover .content {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  .game-seeall-card .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  .game-seeall-card .description {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  .game-seeall-card:hover .hidden-info {
+    display: flex;
+    transform: translateY(12);
+    opacity: 1;
+    height: 100px;
+  }
+  .game-seeall-card:hover img {
+    width:100%;
+  }
+  .game-seeall-card:hover{
+    width:300px;
+  }
+
+  .game-seeall-card .hidden-info {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    transition: transform 0.3s, opacity 0.3s;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 0;
+  }
+
+  .game-seeall-card .hidden-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: black;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .game-seeall-card:hover .hidden-info p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .game-seeall-card .hidden-info p:nth-child(1) {
+    transition-delay: 0.2s;
+  }
+
+  .game-seeall-card.hidden-info p:nth-child(2) {
+    transition-delay: 0.3s;
+  }

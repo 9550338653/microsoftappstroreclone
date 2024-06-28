@@ -1,0 +1,34 @@
+.str-card{
+   
+    background-color:#fff;
+    border-radius: 10px;
+    color:#444444;
+    display:flex;
+    flex-direction:column;
+    margin:10px;
+    padding:20px;
+   
+   
+ }
+ .str-card img{
+     border-radius:5px;
+    
+    height:200px;
+    width:120px;
+ }
+ .str-card button{
+    margin-right:5px;
+    margin-top:10px;
+    margin-left:10px;
+ }
+ .str-card-container{
+   
+    display:flex;
+    
+    flex-direction: row;
+    
+ }
+ .str-card:hover {
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+  
+ }

@@ -1,0 +1,16 @@
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+   
+    
+}
+@media screen and (max-width: 600px) {
+    .game-card-container {
+        flex-direction: column;
+        height: auto;
+    }
+   
+    
+}
